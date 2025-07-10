@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+/* Custom styles for better UI */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Smooth transitions for interactive elements */
+button, a {
+  transition: all 0.3s ease;
+}
+
+/* Add subtle hover effects */
+button:hover, a:hover {
+  transform: translateY(-1px);
+}
+
+/* Card-like effect for forms */
+.bg-white {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
