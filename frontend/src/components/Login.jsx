@@ -14,7 +14,7 @@ function Login({ onLogin }) {
     e.preventDefault();
     try {
       // Send login request to backend
-      const response = await axios.post('http://localhost:5000/api/auth/login', {
+      const response = await axios.post('https://assessment-management-system-6c2v.onrender.com/api/auth/login', {
         email,
         password,
       });

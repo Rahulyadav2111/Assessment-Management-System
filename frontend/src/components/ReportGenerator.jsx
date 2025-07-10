@@ -14,7 +14,7 @@ function ReportGenerator({ token }) {
     try {
       // Send request to generate report
       const response = await axios.post(
-        'http://localhost:5000/api/reports/generate-report',
+        'https://assessment-management-system-6c2v.onrender.com/api/reports/generate-report',
         { session_id: sessionId },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -35,7 +35,7 @@ function ReportGenerator({ token }) {
     try {
       // Send request to download PDF with token
       const response = await axios.get(
-        `http://localhost:5000/api/reports/download/${filename}`,
+        `https://assessment-management-system-6c2v.onrender.com/api/reports/download/${filename}`,
         {
           headers: { Authorization: `Bearer ${token}` },
           responseType: 'blob', // Expect a binary response (PDF)

@@ -17,7 +17,7 @@ function Signup() {
     e.preventDefault();
     try {
       // Send signup request to backend
-      await axios.post('http://localhost:5000/api/auth/signup', {
+      await axios.post('https://assessment-management-system-6c2v.onrender.com/api/auth/signup', {
         email,
         password,
       });
